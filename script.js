@@ -6,6 +6,10 @@ var createPolitician = function(name, partyColor){
     politician.totalVotes = 0;
     politician.partyColor = partyColor;
 
+    politician.tallyUpTotalVotes = function(){
+
+    this.totalVotes = 0;
+
 for (var i=0; i < this.electionResults.length; i++){
   this.totalVotes = this.totalVotes + this.electionResults[i];
 }
